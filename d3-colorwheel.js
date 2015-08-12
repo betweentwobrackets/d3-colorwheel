@@ -28,6 +28,7 @@
                     .value(function() { return arcSegmentSize; });
 
                 var svg = d3.select(this)
+                    .attr("class", "d3-colorwheel")
                     .attr("width", width)
                     .attr("height", height)
                     .attr("viewBox", "0 0 " + width + " " + height);
