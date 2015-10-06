@@ -18,7 +18,7 @@ var data = [{
 
 var colorWheel = d3.colorWheel().width(300).height(360);
 
-var svg = d3.select("body").selectAll("svg")
+var svg = d3.select("#colour-wheels").selectAll("svg")
     .data(data)
   .enter().append("svg")
     .call(colorWheel);
